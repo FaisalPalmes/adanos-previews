@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Menu · Adano's Burger, Failsworth</title>
+<meta name="description" content="The full Adano's menu: halal smashburgers, chicken burgers, peri peri grill, box meals, loaded chips, shakes, waffles and desserts, with prices.">
+<meta name="theme-color" content="#0C0908">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Menu · Adano's Burger">
+<meta property="og:description" content="Halal smashburgers, peri peri grill, shakes, waffles and desserts, with prices.">
+<meta property="og:image" content="assets/img/og-image.jpg">
+<link rel="icon" href="assets/img/favicon-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Bricolage+Grotesque:opsz,wght@12..96,400..700&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+<script>
+  // Before first paint: mark that scripts run, and allow the opening sequence unless the device asks for less motion.
+  (function (d) {
+    d.classList.add('js');
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('moving');
+  })(document.documentElement);
+</script>
+</head>
+<body class="menu-page">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="./" aria-label="Adano's Burger, home"><img src="assets/img/logo-white-mark.png" alt="" width="580" height="480"></a>
+    <nav aria-label="Main"><a class="keep" href="menu.html" aria-current="page">Menu</a><a href="./#meal">Build a meal</a><a href="./#visit">Find us</a></nav>
+    <span class="status" data-status><i></i><span class="st-long" data-st>Open daily from 11am</span><span class="st-short" data-st-short>From 11am</span></span>
+    <a class="btn btn-red top-order" data-order href="./#visit">Order for collection</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="sheet" aria-label="Open navigation" data-sheet-toggle><span></span></button>
+  </div>
+</header>
+
+<nav class="sheet" id="sheet" aria-label="All sections">
+  <div class="sheet-links">
+    <a href="./" style="--i:0"><small>01</small>Home</a>
+    <a href="./#signatures" style="--i:1"><small>02</small>Signatures</a>
+    <a href="./#meal" style="--i:2"><small>03</small>Build a meal</a>
+    <a href="./#inside" style="--i:3"><small>04</small>Inside</a>
+    <a href="./#visit" style="--i:4"><small>05</small>Find us</a>
+  </div>
+  <div class="sheet-foot">
+    <span class="status" data-status><i></i><span data-st>Open daily from 11am</span></span>
+    <p data-address>153 Oldham Rd, Failsworth, Manchester M35 0BX</p>
+    <div class="ctas">
+      <a class="btn btn-red btn-lg" data-order href="./#visit">Order for collection</a>
+      <a class="btn btn-ghost btn-lg" data-tel href="tel:+441618432233">Call</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <p class="eyebrow"><span>Halal · Eat in · Collection<span class="from-480"> · Delivery apps</span></span></p>
+      <h1>The menu</h1>
+      <div class="page-head-row">
+        <p class="lede">Any burger becomes a meal with chips and a drink. Grilled chicken comes in Lemon &amp; Herb, Mild, Hot or Buffalo BBQ.</p>
+        <div class="ctas">
+          <a class="btn btn-red btn-lg" data-order href="./#visit">Order for collection</a>
+          <a class="btn btn-ghost btn-lg" data-tel href="tel:+441618432233">Call <span data-phone>0161 843 2233</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cats-bar needs-js">
+    <button class="cats-go" type="button" data-cats-prev aria-label="Earlier sections" hidden><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <nav class="cats" id="cats" aria-label="Menu sections"></nav>
+    <button class="cats-go" type="button" data-cats-next aria-label="More sections" hidden><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  </div>
+
+  <section class="menu" aria-label="Menu">
+    <div class="wrap">
+      <div id="groups"></div>
+      <noscript><p class="noscript-note" style="margin-top:40px">The menu and prices load with JavaScript. Call 0161 843 2233 and we'll talk you through it.</p></noscript>
+      <p class="menu-foot">Allergies? Please tell us before you order. Prices can change. Your final total is confirmed when you order.</p>
+    </div>
+  </section>
+
+  <section class="order-band panel" aria-labelledby="band-title">
+    <div class="wrap">
+      <div><h2 id="band-title">Ready to order?</h2><p>Order ahead and collect from 153 Oldham Road, or call us.</p></div>
+      <div class="ctas"><a class="btn btn-light btn-lg" data-order href="./#visit">Order for collection</a><a class="btn btn-ghost btn-lg" data-tel href="tel:+441618432233">Call <span data-phone>0161 843 2233</span></a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="foot-tag"><span>Burger <i>·</i> Peri Peri</span> <i class="ft-mid">·</i> <span>Shakes <i>·</i> Waffles</span></p>
+    <div class="foot-grid">
+      <div><img class="foot-logo" src="assets/img/logo-white-mark.png" alt="Adano's" width="580" height="480" loading="lazy"></div>
+      <div><h2>Visit</h2><p data-address>153 Oldham Rd, Failsworth, Manchester M35 0BX</p></div>
+      <div><h2>Hours</h2><p>Mon–Fri 11am–10pm<br>Sat–Sun 11am–11pm</p></div>
+      <div><h2>Order</h2><ul class="foot-links"><li><a data-order href="./#visit">Order for collection</a></li><li><a data-tel href="tel:+441618432233" data-phone>0161 843 2233</a></li><li><a data-instagram href="https://www.instagram.com/adanosburger/" target="_blank" rel="noopener">Instagram @adanosburger</a></li></ul></div>
+    </div>
+    <div class="foot-base"><span>© <span data-year>2026</span> Adano's Burger</span><span class="halal">100% halal</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-red" data-order href="./#visit">Order for collection</a>
+  <a class="btn btn-ghost mbar-call" data-tel href="tel:+441618432233">Call</a>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite" tabindex="-1"></div>
+
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/menu-page.js"></script>
+</body>
+</html>

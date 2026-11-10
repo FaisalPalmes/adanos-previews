@@ -6,9 +6,83 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Adano's Burger · website previews</title>
 <style>
-  body{margin:0;min-height:100vh;display:grid;place-items:center;background:#14100e;color:#fff;font:500 18px/1.5 system-ui,sans-serif;text-align:center;padding:24px}
-  h1{font-size:28px;margin:0 0 8px}p{margin:0;opacity:.7}
+  :root { --bg: #f6f2ec; --ink: #1d1512; --mute: #6b5f58; --line: #ddd4c8; --red: #cf0e0b; --card: #fffdf9; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.55 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: clamp(28px, 6vw, 72px) clamp(16px, 4vw, 40px) 64px; }
+  header p.kicker { margin: 0 0 10px; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--red); font-weight: 700; }
+  h1 { margin: 0 0 14px; font-size: clamp(34px, 6vw, 60px); line-height: 1.02; letter-spacing: -.02em; font-weight: 800; }
+  header p.intro { margin: 0; max-width: 62ch; color: var(--mute); }
+  .grid { display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); margin-top: clamp(28px, 5vw, 52px); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; }
+  .card .shot { display: block; aspect-ratio: 16 / 10; background: #e9e1d6; overflow: hidden; }
+  .card .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; transition: transform .5s cubic-bezier(.2, .7, .2, 1); }
+  .card a.shot:hover img, .card a.shot:focus-visible img { transform: scale(1.03); }
+  .body { padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+  .n { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--mute); font-weight: 700; }
+  h2 { margin: 0; font-size: 26px; line-height: 1.1; letter-spacing: -.01em; }
+  .body p { margin: 0; color: var(--mute); font-size: 16px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; padding-top: 12px; }
+  .btn { display: inline-flex; align-items: center; min-height: 46px; padding: 0 20px; border-radius: 999px; font-weight: 700; font-size: 15px; text-decoration: none; border: 1.5px solid var(--ink); color: var(--ink); }
+  .btn.main { background: var(--red); border-color: var(--red); color: #fff; }
+  .btn:hover { filter: brightness(.94); }
+  a:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  .soon { opacity: .6; }
+  .soon .shot { display: grid; place-items: center; color: var(--mute); font-size: 15px; }
+  .notes { margin-top: clamp(32px, 5vw, 56px); padding-top: 24px; border-top: 1px solid var(--line); color: var(--mute); font-size: 15px; max-width: 70ch; }
+  .notes h3 { margin: 0 0 8px; font-size: 15px; color: var(--ink); }
+  .notes ul { margin: 0; padding-left: 20px; }
+  .notes li { margin: 4px 0; }
+  @media (prefers-reduced-motion: reduce) { .card .shot img { transition: none; } }
 </style>
 </head>
-<body><main><h1>Adano's Burger · website previews</h1><p>The previews are being prepared. Check back shortly.</p></main></body>
+<body>
+<div class="wrap">
+  <header>
+    <p class="kicker">Preview</p>
+    <h1>Adano's Burger: three versions of the new website</h1>
+    <p class="intro">The same shop, menu and prices in three different designs. Each one is a complete site with a homepage and a menu page. Open them on a phone and on a computer, then pick the one that feels right.</p>
+  </header>
+
+  <main class="grid">
+    <article class="card">
+      <a class="shot" href="after-dark/" aria-label="Open After Dark"><img src="thumbs/after-dark.jpg" alt="The After Dark homepage" width="960" height="600"></a>
+      <div class="body">
+        <span class="n">Version 1</span>
+        <h2>After Dark</h2>
+        <p>Dark and cinematic. The film fills the screen, then the food comes close up as you scroll.</p>
+        <div class="links"><a class="btn main" href="after-dark/">Open the site</a><a class="btn" href="after-dark/menu.html">Menu page</a></div>
+      </div>
+    </article>
+
+    <article class="card">
+      <a class="shot" href="red-top/" aria-label="Open Red Top"><img src="thumbs/red-top.jpg" alt="The Red Top homepage" width="960" height="600"></a>
+      <div class="body">
+        <span class="n">Version 2</span>
+        <h2>Red Top</h2>
+        <p>Loud and bright, like a poster wall. Big type, the brand red turned right up, and a heat dial for the peri peri sauces.</p>
+        <div class="links"><a class="btn main" href="red-top/">Open the site</a><a class="btn" href="red-top/menu.html">Menu page</a></div>
+      </div>
+    </article>
+
+    <article class="card soon">
+      <div class="shot">Nearly ready</div>
+      <div class="body">
+        <span class="n">Version 3</span>
+        <h2>Tile &amp; Booth</h2>
+        <p>Light and calm, built from the shop itself: white tiles, red booths and wood. A searchable menu sits on the homepage.</p>
+      </div>
+    </article>
+  </main>
+
+  <section class="notes">
+    <h3>Before you look</h3>
+    <ul>
+      <li>The video and a few photos are stand-ins until the shoot. They carry a small yellow label.</li>
+      <li>"Order for collection" shows a call-us message for now. It will open the online ordering page once that's connected.</li>
+      <li>These pages are previews and are hidden from search engines.</li>
+    </ul>
+  </section>
+</div>
+</body>
 </html>
